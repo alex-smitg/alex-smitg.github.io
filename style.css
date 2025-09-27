@@ -87,3 +87,10 @@ ul {
         transform: translateX(5px) rotateZ(1deg);
     }
 }
+
+@media (max-width: 768px) {
+	img {
+		width: 100%;
+	}
+	
+}
