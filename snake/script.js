@@ -102,7 +102,7 @@ function addPart() {
 reset()
 
 
-let audio_music = new Audio("snake/theme.mp3")
+let audio_music = new Audio("theme.mp3")
 audio_music.addEventListener("ended", (event) => {
     audio_music.play()
 })
@@ -183,22 +183,22 @@ function loop() {
 requestAnimationFrame(loop)
 
 document.addEventListener("keydown", (event) => {
-    if (event.code == "KeyW") {
+    if (event.code == "KeyW" || event.code == "ArrowUp") {
         dx = 0;
         dy = -1;
         started = true
     }
-    if (event.code == "KeyS") {
+    if (event.code == "KeyS" || event.code == "ArrowDown") {
         dx = 0;
         dy = 1;
         started = true
     }
-    if (event.code == "KeyA") {
+    if (event.code == "KeyA" || event.code == "ArrowLeft") {
         dx = -1;
         dy = 0;
         started = true
     }
-    if (event.code == "KeyD") {
+    if (event.code == "KeyD" || event.code == "ArrowRight") {
         dx = 1;
         dy = 0;
         started = true
