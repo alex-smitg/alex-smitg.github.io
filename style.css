@@ -55,7 +55,24 @@ ul {
     animation-duration: 6.9s;
     animation-iteration-count: infinite; 
     margin-left: 5%;
+    display: flex;
+    gap: 5%;
 }
+
+
+li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li img {
+    width: 256px;
+    height: 256px;
+    object-fit: cover;
+}
+
+
 
 
 
@@ -93,6 +110,10 @@ ul {
 		width: 100%;
 	}
 	
+
+    ul {
+        flex-direction: column;
+    }
 
     .hello {
         font-size: 4.0vw;
