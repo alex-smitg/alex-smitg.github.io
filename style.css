@@ -1,3 +1,6 @@
+
+
+
 body {
     background-color: black;
     color: white;
@@ -74,7 +77,19 @@ li img {
 
 
 
+.theme_switcher {
+    font-size: 1em;
+    position: absolute;
+    z-index: 10;
+    color: darkblue
+}
 
+.theme_switcher:hover {
+    font-size: 1em;
+    color: cyan;
+    position: absolute;
+    
+}
 
 
 @keyframes up-down {
