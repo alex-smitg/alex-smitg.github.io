@@ -102,15 +102,6 @@ function addPart() {
 reset()
 
 
-let audio_music = new Audio("theme.mp3")
-audio_music.addEventListener("ended", (event) => {
-    audio_music.play()
-})
-
-document.addEventListener("click", (event) => {
-    audio_music.play()
-})
-
 
 time = Date.now()
 
